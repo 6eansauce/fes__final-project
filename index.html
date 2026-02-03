@@ -9,26 +9,201 @@
   </head>
   <body>
     <header>
-      <div class="section">
-        <figure>
-          <a href="#"><img src="./assets/treact-logo.svg" alt="" />Treact</a>
-        </figure>
-        <nav>
-          <ul class="">
-            <li><a href="">About</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Contact Us</a></li>
-          </ul>
+      <div class="container">
+        <div class="header header-wrapper">
+          <a href="" class="branding brand-wrapper no-link">
+            <img class="brand__logo" src="./assets/treact-logo.svg" alt="" />
+            <span class="brand__name">Treact</span>
+          </a>
 
-          <ul>
-            <li><a href="">Login</a></li>
-            <li><a href="">Sign Up</a></li>  
-          </ul>
-        </nav>
+          <nav class="nav nav-wrapper">
+            <a href="" class="nav__link link-unavailable">About</a>
+            <a href="" class="nav__link link-unavailable">Blog</a>
+            <a href="" class="nav__link link-unavailable">Pricing</a>
+            <a href="" class="nav__link link-unavailable">Contact Us</a>
+            <a href="" class="nav__link nav__link--secondary link-unavailable"
+              >Login</a
+            >
+            <a href="" class="nav__link nav__link--primary link-unavailable"
+              >Sign Up</a
+            >
+          </nav>
+        </div>
       </div>
     </header>
-    <main></main>
-    <footer></footer>
+
+    <main>
+      <!-- Hero Section (Hero styling) -->
+      <section id="hero" class="container">
+        <div class="hero-section section-wrapper">
+          <div class="hero__content hero__content-wrapper">
+            <h1>
+              Beautiful React Templates
+              <span class="content--color-purple">for you. </span>
+            </h1>
+            <p>
+              Our templates are easy to setup, understand and customize. Fully
+              modular components with a variety of pages and components.
+            </p>
+
+            <form action="" class="form landing__form">
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Your E-mail Address"
+              />
+              <button type="submit">Get Started</button>
+            </form>
+            <p>OUR TRUSTED CUSTOMERS</p>
+            <img src="./assets/trusted-customers.png" alt="" />
+          </div>
+
+          <img class="hero__visual" src="./assets/landing.svg" alt="" />
+        </div>
+      </section>
+      <!--  -->
+
+      <!-- Main Sections (Common styling) -->
+      <section id="features-page" class="container">
+        <div class="section section-wrapper">
+          <div class="section__content section__content-wrapper">
+            <h2>FEATURES</h2>
+            <h3>
+              We Have Amazing
+              <span class="content--color-purple">Service. </span>
+            </h3>
+            <ul>
+              <li>
+                <img src="./assets/shield-icon.svg" alt="Shield Icon" />
+
+                <div>
+                  <h4>Secure</h4>
+                  <p>
+                    We strictly only deal with vendors that provide top notch
+                    security.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <img src="./assets/support-icon.svg" alt="Support Icon" />
+
+                <div>
+                  <h4>24/7 Support</h4>
+                  <p>
+                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                    quis nostrud.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <img src="./assets/customize-icon.svg" alt="Customize Icon" />
+
+                <div>
+                  <h4>Reliable</h4>
+                  <p>
+                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                    quis nostrud.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <img src="./assets/reliable-icon.svg" alt="Reliable Icon" />
+
+                <div>
+                  <h4>Reliable</h4>
+                  <p>
+                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                    quis nostrud.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <img src="./assets/fast-icon.svg" alt="Fast Icon" />
+
+                <div>
+                  <h4>Fast</h4>
+                  <p>
+                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                    quis nostrud.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <img src="./assets/simple-icon.svg" alt="Simple Icon" />
+
+                <div>
+                  <h4>Easy</h4>
+                  <p>
+                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                    quis nostrud.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="works-page" class="container">
+        <div class="section section-wrapper">
+          <div class="section__content section__content-wrapper">
+            <h2>QUALITY WORK</h2>
+            <h3>
+              Designed & Developed by
+              <span class="content--color-purple">Professionals.</span>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <button>Learn More</button>
+          </div>
+
+          <img class="section__visual" src="./assets/works.png" alt="" />
+        </div>
+      </section>
+
+      <section id="steps-page" class="container">
+        <div class="section section-wrapper">
+          <img class="section__visual" src="./assets/steps-page.png" alt="" />
+          <div class="section__content section__content-wrapper">
+            <h2>STEPS</h2>
+            <h3>
+              Easy to <span class="content--color-purple">Get Started.</span>
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section id="values-page" class="container">
+        <div class="section section-wrapper">
+          <div class="section__content section__content-wrapper">
+            <h2>VALUES</h2>
+            <h3>
+              We Always Abide By Our
+              <span class="content--color-purple">Principles.</span>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container"></div>
+    </footer>
   </body>
 </html>

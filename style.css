@@ -7,20 +7,49 @@
   font-family: "Lexend Deca", sans-serif;
 }
 
-figure {
-  display: flex;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-.section {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
+/* 
+
+    MAIN STRUCTURING & STYLING
+
+*/
+
+:root {
+  --header-height: 80px;
+  --purple: rgb(100 21 255);
+  --dark-navy: rgb(36, 62, 99);
+  --light-gray: rgb(124, 139, 161);
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.link-unavailable {
+  cursor: not-allowed;
+}
+
+.content--color-purple {
+  color: var(--purple);
+}
 
 /* 
 
@@ -28,3 +57,137 @@ ul {
 
 */
 
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  height: var(--header-height);
+}
+
+.brand-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.branding {
+  gap: 12px;
+}
+
+.brand__logo {
+  width: 42px;
+}
+
+.brand__name {
+  font-size: 24px;
+  font-weight: 800;
+  color: rgb(36, 62, 99);
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  gap: 36px;
+}
+
+.nav__link {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: rgb(36, 62, 99);
+}
+
+.nav__link--secondary {
+  margin-left: 42px;
+}
+
+.nav__link--primary {
+  padding: 12px 30px;
+  border-radius: 36px;
+  color: white;
+  background-color: rgb(100 21 255);
+}
+
+/* 
+
+    HERO SECTION
+
+*/
+
+.hero-section {
+  height: calc(100vh - var(--header-height));
+}
+
+.hero__content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__content {
+  width: 40%;
+}
+
+.hero__visual {
+  width: 60%;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.hero-section p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* 
+
+    MAIN SECTIONS STYLING
+
+*/
+
+.section-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.section__content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__content {
+  width: 50%;
+}
+
+.section__visual {
+  width: 50%;
+}
+
+.section h2 {
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  color: var(--purple);
+}
+
+.section h3 {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--dark-navy);
+}
+
+.section p {
+  font-size: 18px;
+  color: rgb(124, 139, 161);
+}
