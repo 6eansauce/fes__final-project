@@ -11,7 +11,7 @@
     <header>
       <div class="container">
         <div class="header header-wrapper">
-          <a href="" class="branding brand-wrapper no-link">
+          <a href="" class="brand brand-wrapper no-link">
             <img class="brand__logo" src="./assets/treact-logo.svg" alt="" />
             <span class="brand__name">Treact</span>
           </a>
@@ -35,8 +35,8 @@
     <main>
       <!-- Hero Section (Hero styling) -->
       <section id="hero" class="container">
-        <div class="hero-section section-wrapper">
-          <div class="hero__content hero__content-wrapper">
+        <div class="section-wrapper hero-section hero">
+          <div class="content-wrapper hero-content">
             <h1>
               Beautiful React Templates
               <span class="content--color-purple">for you. </span>
@@ -46,28 +46,31 @@
               modular components with a variety of pages and components.
             </p>
 
-            <form action="" class="form landing__form">
-              <input
-                type="email"
-                name=""
-                id=""
-                placeholder="Your E-mail Address"
-              />
-              <button type="submit">Get Started</button>
+            <form action="" class="form form-wrapper">
+              <div class="input-wrapper">
+                <input
+                  type="email"
+                  name="user-email"
+                  id="email"
+                  placeholder="Your E-mail Address"
+                />
+                <button class="btn" type="submit">Get Started</button>
+              </div>
             </form>
             <p>OUR TRUSTED CUSTOMERS</p>
+            
             <img src="./assets/trusted-customers.png" alt="" />
           </div>
 
-          <img class="hero__visual" src="./assets/landing.svg" alt="" />
+          <img class="visual" src="./assets/landing.svg" alt="" />
         </div>
       </section>
       <!--  -->
 
       <!-- Main Sections (Common styling) -->
       <section id="features-page" class="container">
-        <div class="section section-wrapper">
-          <div class="section__content section__content-wrapper">
+        <div class="section-wrapper section">
+          <div class="content-wrapper content">
             <h2>FEATURES</h2>
             <h3>
               We Have Amazing
@@ -151,8 +154,8 @@
       </section>
 
       <section id="works-page" class="container">
-        <div class="section section-wrapper">
-          <div class="section__content section__content-wrapper">
+        <div class="section-wrapper section">
+          <div class="content-wrapper content">
             <h2>QUALITY WORK</h2>
             <h3>
               Designed & Developed by
@@ -167,14 +170,14 @@
             <button>Learn More</button>
           </div>
 
-          <img class="section__visual" src="./assets/works.png" alt="" />
+          <img class="visual" src="./assets/works.png" alt="" />
         </div>
       </section>
 
       <section id="steps-page" class="container">
-        <div class="section section-wrapper">
-          <img class="section__visual" src="./assets/steps-page.png" alt="" />
-          <div class="section__content section__content-wrapper">
+        <div class="section-wrapper section">
+          <img class="visual" src="./assets/steps-page.png" alt="" />
+          <div class="content-wrapper content">
             <h2>STEPS</h2>
             <h3>
               Easy to <span class="content--color-purple">Get Started.</span>
@@ -184,8 +187,8 @@
       </section>
 
       <section id="values-page" class="container">
-        <div class="section section-wrapper">
-          <div class="section__content section__content-wrapper">
+        <div class="section-wrapper section">
+          <div class="content-wrapper content">
             <h2>VALUES</h2>
             <h3>
               We Always Abide By Our
@@ -198,6 +201,55 @@
               nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
+
+          <img class="visual" src="./assets/values-page.svg" alt="" />
+        </div>
+      </section>
+
+      <section id="pricings-page" class="container">
+        <div class="section-wrapper section">
+          <div class="content-wrapper content">
+            <h2>PRICING</h2>
+            <h3>
+              Reasonable and Flexible
+              <span class="content--color-purple">Plans.</span>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials-page" class="container">
+        <div class="section-wrapper section">
+          <div class="content-wrapper content">
+            <h2>TESTIMONIALS</h2>
+            <h3>
+              Our Clients <span class="content--color-purple">Love Us.</span>
+            </h3>
+          </div>
+          <img class="section__visual" src="./assets/testimonials-page.svg" alt="">
+        </div>
+      </section>
+
+      <section id="faq-page" class="container">
+        <div class="section-wrapper section">
+          <div class="content-wrapper content">
+            <h2>FAQS</h2>
+            <h3>You Have <span class="content--color-purple">Questions?</span></h3>
+            <p>And we have got answers to all of them. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+
+          <ul class="faq-list">
+            <li class="faq-list"><p>Are all the templates easily customizable?</p></li>
+            <li class="faq-list"><p>How long do you usually support an standalone template?</p></li>
+            <li class="faq-list"><p>What kind of payment methods do you accept?</p></li>
+            <li class="faq-list"><p>Is there a subscription service to get the latest templates?</p></li>
+            <li class="faq-list"><p>Are the templates compatible with the React?</p></li>
+            <li class="faq-list"><p>Do you really support Internet Explorer 11?</p></li>
+          </ul>
         </div>
       </section>
     </main>
