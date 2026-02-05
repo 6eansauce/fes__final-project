@@ -11,7 +11,7 @@
     <header>
       <div class="container">
         <div class="header header-wrapper">
-          <a href="" class="brand brand-wrapper no-link">
+          <a href="" class="brand brand-wrapper link-unavailable">
             <img class="brand__logo" src="./assets/treact-logo.svg" alt="" />
             <span class="brand__name">Treact</span>
           </a>
@@ -37,32 +37,34 @@
       <section id="hero" class="container">
         <div class="section-wrapper hero-section hero">
           <div class="content-wrapper hero-content">
-            <h1>
+            <h1 class="hero__title">
               Beautiful React Templates
               <span class="content--color-purple">for you. </span>
             </h1>
-            <p>
+            <p class="hero__p">
               Our templates are easy to setup, understand and customize. Fully
               modular components with a variety of pages and components.
             </p>
 
-            <form action="" class="form form-wrapper">
-              <div class="input-wrapper">
-                <input
-                  type="email"
-                  name="user-email"
-                  id="email"
-                  placeholder="Your E-mail Address"
-                />
-                <button class="btn" type="submit">Get Started</button>
-              </div>
+            <form action="" class="form-wrapper form">
+              <input
+                class="form__input"
+                type="email"
+                name="user-email"
+                id="email"
+                placeholder="Your E-mail Address"
+              />
+              <button class="hero-btn btn link-unavailable" type="submit">
+                Get Started
+              </button>
             </form>
-            <p>OUR TRUSTED CUSTOMERS</p>
-            
-            <img src="./assets/trusted-customers.png" alt="" />
+            <div class="trusted-customers-wrapper trusted-customers">
+              <p>OUR TRUSTED CUSTOMERS</p>
+              <img src="./assets/trusted-customers.png" alt="" />
+            </div>
           </div>
 
-          <img class="visual" src="./assets/landing.svg" alt="" />
+          <img class="hero-visual" src="./assets/landing.svg" alt="" />
         </div>
       </section>
       <!--  -->
@@ -230,7 +232,7 @@
               Our Clients <span class="content--color-purple">Love Us.</span>
             </h3>
           </div>
-          <img class="section__visual" src="./assets/testimonials-page.svg" alt="">
+          <img class="visual" src="./assets/testimonials-page.svg" alt="" />
         </div>
       </section>
 
@@ -238,17 +240,36 @@
         <div class="section-wrapper section">
           <div class="content-wrapper content">
             <h2>FAQS</h2>
-            <h3>You Have <span class="content--color-purple">Questions?</span></h3>
-            <p>And we have got answers to all of them. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>
+              You Have <span class="content--color-purple">Questions?</span>
+            </h3>
+            <p>
+              And we have got answers to all of them. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit.
+            </p>
           </div>
 
           <ul class="faq-list">
-            <li class="faq-list"><p>Are all the templates easily customizable?</p></li>
-            <li class="faq-list"><p>How long do you usually support an standalone template?</p></li>
-            <li class="faq-list"><p>What kind of payment methods do you accept?</p></li>
-            <li class="faq-list"><p>Is there a subscription service to get the latest templates?</p></li>
-            <li class="faq-list"><p>Are the templates compatible with the React?</p></li>
-            <li class="faq-list"><p>Do you really support Internet Explorer 11?</p></li>
+            <li class="faq-list">
+              <p>Are all the templates easily customizable?</p>
+            </li>
+            <li class="faq-list">
+              <p>How long do you usually support an standalone template?</p>
+            </li>
+            <li class="faq-list">
+              <p>What kind of payment methods do you accept?</p>
+            </li>
+            <li class="faq-list">
+              <p>
+                Is there a subscription service to get the latest templates?
+              </p>
+            </li>
+            <li class="faq-list">
+              <p>Are the templates compatible with the React?</p>
+            </li>
+            <li class="faq-list">
+              <p>Do you really support Internet Explorer 11?</p>
+            </li>
           </ul>
         </div>
       </section>
