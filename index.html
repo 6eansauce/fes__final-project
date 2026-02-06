@@ -6,6 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fb4e81fea9.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -17,17 +21,42 @@
           </a>
 
           <nav class="nav nav-wrapper">
-            <a href="" class="nav__link link-unavailable">About</a>
-            <a href="" class="nav__link link-unavailable">Blog</a>
-            <a href="" class="nav__link link-unavailable">Pricing</a>
-            <a href="" class="nav__link link-unavailable">Contact Us</a>
-            <a href="" class="nav__link nav__link--secondary link-unavailable"
-              >Login</a
-            >
-            <a href="" class="nav__link nav__link--primary link-unavailable"
+            <div class="nav__links nav__links--secondary">
+              <a href="" class="nav__link link-unavailable">About</a>
+              <a href="" class="nav__link link-unavailable">Blog</a>
+              <a href="" class="nav__link link-unavailable">Pricing</a>
+              <a href="" class="nav__link link-unavailable">Contact Us</a>
+            </div>
+
+            <div class="nav__links nav__links--primary">
+              <a href="" class="nav__link link-unavailable">Login</a>
+              <a href="" class="nav__link nav__link--primary link-unavailable"
+                >Sign Up</a
+              >
+            </div>
+
+            <i class="nav__menu fas fa-bars" onclick="openMenu()"></i>
+          </nav>
+        </div>
+
+        <div id="menu" class="menu">
+          <button
+            class="menu__close fas fa-times"
+            onclick="closeMenu()"
+          ></button>
+          <div class="menu__links menu__links--secondary">
+            <a href="" class="menu__link link-unavailable">About</a>
+            <a href="" class="menu__link link-unavailable">Blog</a>
+            <a href="" class="menu__link link-unavailable">Pricing</a>
+            <a href="" class="menu__link link-unavailable">Contact Us</a>
+          </div>
+
+          <div class="menu__links menu__links--primary">
+            <a href="" class="menu__link link-unavailable">Login</a>
+            <a href="" class="menu__link menu__link--primary link-unavailable"
               >Sign Up</a
             >
-          </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -71,87 +100,128 @@
 
       <!-- Main Sections (Common styling) -->
       <section id="features-page" class="container">
-        <div class="section-wrapper section">
+        <div class="section-wrapper section features-wrapper">
           <div class="content-wrapper content">
             <h2>FEATURES</h2>
             <h3>
               We Have Amazing
               <span class="content--color-purple">Service. </span>
             </h3>
-            <ul>
-              <li>
-                <img src="./assets/shield-icon.svg" alt="Shield Icon" />
-
-                <div>
-                  <h4>Secure</h4>
-                  <p>
-                    We strictly only deal with vendors that provide top notch
-                    security.
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <img src="./assets/support-icon.svg" alt="Support Icon" />
-
-                <div>
-                  <h4>24/7 Support</h4>
-                  <p>
-                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                    quis nostrud.
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <img src="./assets/customize-icon.svg" alt="Customize Icon" />
-
-                <div>
-                  <h4>Reliable</h4>
-                  <p>
-                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                    quis nostrud.
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <img src="./assets/reliable-icon.svg" alt="Reliable Icon" />
-
-                <div>
-                  <h4>Reliable</h4>
-                  <p>
-                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                    quis nostrud.
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <img src="./assets/fast-icon.svg" alt="Fast Icon" />
-
-                <div>
-                  <h4>Fast</h4>
-                  <p>
-                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                    quis nostrud.
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <img src="./assets/simple-icon.svg" alt="Simple Icon" />
-
-                <div>
-                  <h4>Easy</h4>
-                  <p>
-                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                    quis nostrud.
-                  </p>
-                </div>
-              </li>
-            </ul>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
           </div>
+
+          <ul class="services">
+            <li class="service__item">
+              <div class="service__icon-wrapper">
+                <img
+                  class="service__icon"
+                  src="./assets/shield-icon.svg"
+                  alt="Shield Icon"
+                />
+              </div>
+
+              <div class="service__description">
+                <h4>Secure</h4>
+                <p>
+                  We strictly only deal with vendors that provide top notch
+                  security.
+                </p>
+              </div>
+            </li>
+
+            <li class="service__item">
+              <div class="service__icon-wrapper">
+                <img
+                  class="service__icon"
+                  src="./assets/support-icon.svg"
+                  alt="Support Icon"
+                />
+              </div>
+
+              <div class="service__description">
+                <h4>24/7 Support</h4>
+                <p>
+                  Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                  quis nostrud.
+                </p>
+              </div>
+            </li>
+
+            <li class="service__item">
+              <div class="service__icon-wrapper">
+                <img
+                  class="service__icon"
+                  src="./assets/customize-icon.svg"
+                  alt="Customize Icon"
+                />
+              </div>
+
+              <div class="service__description">
+                <h4>Reliable</h4>
+                <p>
+                  Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                  quis nostrud.
+                </p>
+              </div>
+            </li>
+
+            <li class="service__item">
+              <div class="service__icon-wrapper">
+                <img
+                  class="service__icon"
+                  src="./assets/reliable-icon.svg"
+                  alt="Reliable Icon"
+                />
+              </div>
+
+              <div class="service__description">
+                <h4>Reliable</h4>
+                <p>
+                  Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                  quis nostrud.
+                </p>
+              </div>
+            </li>
+
+            <li class="service__item">
+              <div class="service__icon-wrapper">
+                <img
+                  class="service__icon"
+                  src="./assets/fast-icon.svg"
+                  alt="Fast Icon"
+                />
+              </div>
+
+              <div class="service__description">
+                <h4>Fast</h4>
+                <p>
+                  Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                  quis nostrud.
+                </p>
+              </div>
+            </li>
+
+            <li class="service__item">
+              <div class="service__icon-wrapper">
+                <img
+                  class="service__icon"
+                  src="./assets/simple-icon.svg"
+                  alt="Simple Icon"
+                />
+              </div>
+
+              <div class="service__description">
+                <h4>Easy</h4>
+                <p>
+                  Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                  quis nostrud.
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
