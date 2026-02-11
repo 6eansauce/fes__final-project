@@ -38,7 +38,9 @@ ul {
 }
 
 .container {
-  width: min(90%, 1280px);
+  /* Main Container: Keep everything 1280px or 90% of body */
+  width: 95%;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -69,42 +71,65 @@ ul {
 
 /* 
 
-    HEADER - WEBSITE BRAND & NAVIGATION
+    WRAPPERS
 
 */
 
-.header-wrapper {
+.row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* 
+
+    HEADER - BRAND & NAVIGATION
+
+*/
 
 .header {
   height: var(--header-height);
 }
 
-.brand-wrapper,
-.nav__links,
-.nav-wrapper {
-  display: flex;
-  align-items: center;
+.header-wrapper {
+  justify-content: space-between;
+  height: 100%;
 }
 
-.brand {
+.header__brand {
   gap: 18px;
 }
 
-.brand__logo {
+.header__brand-logo {
   width: 42px;
 }
 
-.brand__name {
+.header__brand-name {
   font-size: 24px;
   font-weight: 800;
   color: var(--dark-navy);
 }
 
-.nav {
+.nav-wrapper {
   gap: 60px;
 }
 
@@ -130,7 +155,7 @@ ul {
   background-color: rgb(100 21 255);
 }
 
-.nav__menu {
+.nav .fa-bars {
   display: none;
   font-size: 30px;
   color: var(--dark-navy);
@@ -143,7 +168,6 @@ ul {
 
   display: none;
   flex-direction: column;
-  justify-content: center;
 
   padding: 40px;
 
@@ -166,6 +190,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .menu__links--primary {
@@ -179,23 +204,16 @@ ul {
 */
 
 .section-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
   gap: 15px;
 }
 
 .section {
-  min-height: 100vh;
+  height: 100vh;
 }
 
-.hero-section {
-  min-height: calc(100vh - var(--header-height));
-}
-
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
+.hero {
+  height: calc(100vh - var(--header-height));
 }
 
 .content {
@@ -211,7 +229,7 @@ ul {
 }
 
 .hero-visual {
-  width: clamp(400px, 100%, 50%);
+  width: clamp(400px, 100%, 60%);
 }
 
 /* 
@@ -280,7 +298,6 @@ ul {
 }
 
 .trusted-customers p {
-  display: flex;
   font-size: 0.8rem;
   font-weight: 600;
   color: rgb(160, 174, 192);
@@ -325,8 +342,8 @@ ul {
 
 .service__icon-wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   min-width: 70px;
   min-height: 70px;
   border: var(--light-gray) solid 1px;
@@ -361,7 +378,7 @@ ul {
     display: none;
   }
 
-  .nav__menu {
+  .nav .fa-bars {
     display: flex;
   }
 
@@ -375,6 +392,5 @@ ul {
 
   .content-wrapper {
     text-align: center;
-    align-items: center;
   }
 }
