@@ -13,30 +13,25 @@
   </head>
   <body>
     <header>
-      <!-- class="container header" -->
-      <div class="container header">
-        <!-- class="row header-wrapper" -->
-        <div class="row header-wrapper">
-          <a href="" class="row header__brand link-unavailable">
-            <img
-              class="header__brand-logo"
-              src="./assets/treact-logo.svg"
-              alt=""
-            />
-            <span class="header__brand-name">Treact</span>
-          </a>
+      <div class="header container">
+        <div class="header-wrapper flex-row">
+          <div class="brand flex-row">
+            <div class="brand__logo">
+              <img src="./assets/treact-logo.svg" alt="" />
+            </div>
+            <span class="brand__name">Treact</span>
+          </div>
 
-          <!-- class="nav" -->
           <nav class="nav">
-            <div class="row nav-wrapper">
-              <div class="row nav__links nav__links--secondary">
+            <div class="nav-wrapper flex-row">
+              <div class="nav__links nav__links--secondary flex-row">
                 <a href="" class="nav__link link-unavailable">About</a>
                 <a href="" class="nav__link link-unavailable">Blog</a>
                 <a href="" class="nav__link link-unavailable">Pricing</a>
                 <a href="" class="nav__link link-unavailable">Contact Us</a>
               </div>
 
-              <div class="row nav__links nav__links--primary">
+              <div class="nav__links nav__links--primary flex-row">
                 <a href="" class="nav__link link-unavailable">Login</a>
                 <a href="" class="nav__link nav__link--primary link-unavailable"
                   >Sign Up</a
@@ -73,20 +68,20 @@
     <main>
       <!-- Hero Section -->
       <section id="hero">
-        <div class="container hero">
-          <div class="row-center section-wrapper">
-            <!-- class="col hero-content" -->
-            <div class="col content-wrapper hero-content">
+        <div class="hero-section container">
+          <div class="section-wrapper flex-row--center">
+            <div class="section__content section__content--primary flex-col">
               <h1 class="hero__title">
                 Beautiful React Templates
                 <span class="content--color-purple">for you. </span>
               </h1>
+
               <p class="hero__p">
                 Our templates are easy to setup, understand and customize. Fully
                 modular components with a variety of pages and components.
               </p>
 
-              <form action="" class="form-wrapper form">
+              <form action="" class="form flex-row">
                 <input
                   class="form__input"
                   type="email"
@@ -98,156 +93,161 @@
                   Get Started
                 </button>
               </form>
+
               <div class="trusted-customers-wrapper trusted-customers">
                 <p>OUR TRUSTED CUSTOMERS</p>
                 <img src="./assets/trusted-customers.png" alt="" />
               </div>
             </div>
 
-            <img class="hero-visual" src="./assets/landing.svg" alt="" />
+            <div class="section__content section__content--secondary">
+              <img class="hero-visual" src="./assets/landing.svg" alt="" />
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Main Sections -->
-      <section id="features-page">
-        <div class="container section">
-          <div class="col-center section-wrapper">
-            <div class="col content">
-              <h2>FEATURES</h2>
-              <h3>
+      <section id="features">
+        <div class="section container">
+          <div class="section-wrapper flex-col--center">
+            <div class="section__content flex-col">
+              <h2 class="section__title">FEATURES</h2>
+              <h3 class="section__subtitle">
                 We Have Amazing
                 <span class="content--color-purple">Service. </span>
               </h3>
-              <p>
+              <p class="section__p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
 
-            <ul class="services">
-              <li class="service__item">
-                <div class="service__icon-wrapper">
-                  <img
-                    class="service__icon"
-                    src="./assets/shield-icon.svg"
-                    alt="Shield Icon"
-                  />
-                </div>
+            <div class="section__content">
+              <ul class="services">
+                <li class="service__item">
+                  <div class="service__icon-wrapper">
+                    <img
+                      class="service__icon"
+                      src="./assets/shield-icon.svg"
+                      alt="Shield Icon"
+                    />
+                  </div>
 
-                <div class="service__description">
-                  <h4>Secure</h4>
-                  <p>
-                    We strictly only deal with vendors that provide top notch
-                    security.
-                  </p>
-                </div>
-              </li>
+                  <div class="service__description">
+                    <h4>Secure</h4>
+                    <p>
+                      We strictly only deal with vendors that provide top notch
+                      security.
+                    </p>
+                  </div>
+                </li>
 
-              <li class="service__item">
-                <div class="service__icon-wrapper">
-                  <img
-                    class="service__icon"
-                    src="./assets/support-icon.svg"
-                    alt="Support Icon"
-                  />
-                </div>
+                <li class="service__item">
+                  <div class="service__icon-wrapper">
+                    <img
+                      class="service__icon"
+                      src="./assets/support-icon.svg"
+                      alt="Support Icon"
+                    />
+                  </div>
 
-                <div class="service__description">
-                  <h4>24/7 Support</h4>
-                  <p>
-                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                    quis nostrud.
-                  </p>
-                </div>
-              </li>
+                  <div class="service__description">
+                    <h4>24/7 Support</h4>
+                    <p>
+                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                      quis nostrud.
+                    </p>
+                  </div>
+                </li>
 
-              <li class="service__item">
-                <div class="service__icon-wrapper">
-                  <img
-                    class="service__icon"
-                    src="./assets/customize-icon.svg"
-                    alt="Customize Icon"
-                  />
-                </div>
+                <li class="service__item">
+                  <div class="service__icon-wrapper">
+                    <img
+                      class="service__icon"
+                      src="./assets/customize-icon.svg"
+                      alt="Customize Icon"
+                    />
+                  </div>
 
-                <div class="service__description">
-                  <h4>Reliable</h4>
-                  <p>
-                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                    quis nostrud.
-                  </p>
-                </div>
-              </li>
+                  <div class="service__description">
+                    <h4>Reliable</h4>
+                    <p>
+                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                      quis nostrud.
+                    </p>
+                  </div>
+                </li>
 
-              <li class="service__item">
-                <div class="service__icon-wrapper">
-                  <img
-                    class="service__icon"
-                    src="./assets/reliable-icon.svg"
-                    alt="Reliable Icon"
-                  />
-                </div>
+                <li class="service__item">
+                  <div class="service__icon-wrapper">
+                    <img
+                      class="service__icon"
+                      src="./assets/reliable-icon.svg"
+                      alt="Reliable Icon"
+                    />
+                  </div>
 
-                <div class="service__description">
-                  <h4>Reliable</h4>
-                  <p>
-                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                    quis nostrud.
-                  </p>
-                </div>
-              </li>
+                  <div class="service__description">
+                    <h4>Reliable</h4>
+                    <p>
+                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                      quis nostrud.
+                    </p>
+                  </div>
+                </li>
 
-              <li class="service__item">
-                <div class="service__icon-wrapper">
-                  <img
-                    class="service__icon"
-                    src="./assets/fast-icon.svg"
-                    alt="Fast Icon"
-                  />
-                </div>
+                <li class="service__item">
+                  <div class="service__icon-wrapper">
+                    <img
+                      class="service__icon"
+                      src="./assets/fast-icon.svg"
+                      alt="Fast Icon"
+                    />
+                  </div>
 
-                <div class="service__description">
-                  <h4>Fast</h4>
-                  <p>
-                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                    quis nostrud.
-                  </p>
-                </div>
-              </li>
+                  <div class="service__description">
+                    <h4>Fast</h4>
+                    <p>
+                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                      quis nostrud.
+                    </p>
+                  </div>
+                </li>
 
-              <li class="service__item">
-                <div class="service__icon-wrapper">
-                  <img
-                    class="service__icon"
-                    src="./assets/simple-icon.svg"
-                    alt="Simple Icon"
-                  />
-                </div>
+                <li class="service__item">
+                  <div class="service__icon-wrapper">
+                    <img
+                      class="service__icon"
+                      src="./assets/simple-icon.svg"
+                      alt="Simple Icon"
+                    />
+                  </div>
 
-                <div class="service__description">
-                  <h4>Easy</h4>
-                  <p>
-                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                    quis nostrud.
-                  </p>
-                </div>
-              </li>
-            </ul>
+                  <div class="service__description">
+                    <h4>Easy</h4>
+                    <p>
+                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                      quis nostrud.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="works-page">
-        <div class="container section">
-          <div class="row-center section-wrapper">
-            <div class="col content-wrapper content">
-              <h2>QUALITY WORK</h2>
-              <h3 class="content--color-purple">
+      <section id="works">
+        <div class="section container">
+          <div class="section-wrapper flex-row--center">
+            <div class="section__content flex-col">
+              <h2 class="section__title">QUALITY WORK</h2>
+              <h3 class="section__subtitle">
                 Designed & Developed by
                 <span class="content--color-purple">Professionals.</span>
               </h3>
-              <p>
+              <p class="section__p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -256,19 +256,23 @@
               <button>Learn More</button>
             </div>
 
-            <img class="visual" src="./assets/works.png" alt="" />
+            <div class="section__content">
+              <img class="visual" src="./assets/works.png" alt="" />
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="steps-page">
-        <div class="container section">
-          <div class="row-center section-wrapper">
-            <img class="visual" src="./assets/steps-page.png" alt="" />
+      <section id="steps">
+        <div class="section container">
+          <div class="section-wrapper flex-row--center">
+            <div class="section__content">
+              <img src="./assets/steps-page.png" alt="" />
+            </div>
 
-            <div class="col content-wrapper content">
-              <h2>STEPS</h2>
-              <h3>
+            <div class="section__content flex-col">
+              <h2 class="section__title">STEPS</h2>
+              <h3 class="section__subtitle">
                 Easy to <span class="content--color-purple">Get Started.</span>
               </h3>
             </div>
@@ -276,16 +280,16 @@
         </div>
       </section>
 
-      <section id="values-page">
-        <div class="container section">
-          <div class="row-center section-wrapper">
-            <div class="col content-wrapper content">
-              <h2>VALUES</h2>
-              <h3>
+      <section id="values">
+        <div class="section container">
+          <div class="section-wrapper flex-row--center">
+            <div class="section__content flex-col">
+              <h2 class="section__title">VALUES</h2>
+              <h3 class="section__subtitle">
                 We Always Abide By Our
                 <span class="content--color-purple">Principles.</span>
               </h3>
-              <p>
+              <p class="section__p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -293,141 +297,149 @@
               </p>
             </div>
 
-            <img class="visual" src="./assets/values-page.svg" alt="" />
+            <div class="section__content">
+              <img src="./assets/values-page.svg" alt="" />
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="pricings-page">
-        <div class="container section">
-          <!-- class="col-center section-wrapper" -->
-          <div class="col-center section-wrapper">
-            <div class="col content-wrapper content">
-              <h2>PRICING</h2>
-              <h3>
+      <section id="pricing">
+        <div class="section container">
+          <div class="section-wrapper flex-col--center">
+            <div class="section__content flex-col">
+              <h2 class="section__title">PRICING</h2>
+              <h3 class="section__subtitle">
                 Reasonable and Flexible
                 <span class="content--color-purple">Plans.</span>
               </h3>
-              <p>
+              <p class="section__p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
 
-            <ul class="pricing__plans">
-              <li class="plan">
-                <div class="plan__price">
-                  <h4>PERSONAL</h4>
-                  <p>$17.99</p>
-                  <p>MONTHLY</p>
-                </div>
+            <div class="section__content">
+              <ul class="pricing__plans">
+                <li class="plan">
+                  <div class="plan__price">
+                    <h4>PERSONAL</h4>
+                    <p>$17.99</p>
+                    <p>MONTHLY</p>
+                  </div>
 
-                <div class="plan__features">
-                  <h5>For Individuals</h5>
-                  <p>30 Templates</p>
-                  <p>7 Landing Pages</p>
-                  <p>12 Internal Pages</p>
-                  <p>Basic Assistance</p>
-                </div>
+                  <div class="plan__features">
+                    <h5>For Individuals</h5>
+                    <p>30 Templates</p>
+                    <p>7 Landing Pages</p>
+                    <p>12 Internal Pages</p>
+                    <p>Basic Assistance</p>
+                  </div>
 
-                <button class="plan__button">BUY NOW</button>
-              </li>
+                  <button class="plan__button">BUY NOW</button>
+                </li>
 
-              <li class="plan">
-                <div class="plan__price">
-                  <h4>BUSINESS</h4>
-                  <p>$37.99</p>
-                  <p>MONTHLY</p>
-                </div>
+                <li class="plan">
+                  <div class="plan__price">
+                    <h4>BUSINESS</h4>
+                    <p>$37.99</p>
+                    <p>MONTHLY</p>
+                  </div>
 
-                <div class="plan__features">
-                  <h5>For Small Businesses</h5>
-                  <p>60 Templates</p>
-                  <p>15 Landing Pages</p>
-                  <p>22 Internal Pages</p>
-                  <p>Priority Assistance</p>
-                </div>
+                  <div class="plan__features">
+                    <h5>For Small Businesses</h5>
+                    <p>60 Templates</p>
+                    <p>15 Landing Pages</p>
+                    <p>22 Internal Pages</p>
+                    <p>Priority Assistance</p>
+                  </div>
 
-                <button class="plan__button">BUY NOW</button>
-              </li>
+                  <button class="plan__button">BUY NOW</button>
+                </li>
 
-              <li class="plan">
-                <div class="plan__price">
-                  <h4>ENTERPRISE</h4>
-                  <p>$17.99</p>
-                  <p>MONTHLY</p>
-                </div>
+                <li class="plan">
+                  <div class="plan__price">
+                    <h4>ENTERPRISE</h4>
+                    <p>$17.99</p>
+                    <p>MONTHLY</p>
+                  </div>
 
-                <div class="plan__features">
-                  <h5>For Large Companies</h5>
-                  <p>90 Templates</p>
-                  <p>27 Landing Pages</p>
-                  <p>32 Internal Pages</p>
-                  <p>Personal Assistance</p>
-                </div>
+                  <div class="plan__features">
+                    <h5>For Large Companies</h5>
+                    <p>90 Templates</p>
+                    <p>27 Landing Pages</p>
+                    <p>32 Internal Pages</p>
+                    <p>Personal Assistance</p>
+                  </div>
 
-                <button class="plan__button">BUY NOW</button>
-              </li>
-            </ul>
+                  <button class="plan__button">BUY NOW</button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="testimonials-page">
-        <div class="container section">
-          <div class="row-center section-wrapper">
-            <div class="col content-wrapper content">
-              <h2>TESTIMONIALS</h2>
-              <h3>
+      <section id="testimonials">
+        <div class="section container">
+          <div class="section-wrapper flex-row--center">
+            <div class="section__content flex-col">
+              <h2 class="section__title">TESTIMONIALS</h2>
+              <h3 class="section__subtitle">
                 Our Clients <span class="content--color-purple">Love Us.</span>
               </h3>
-              <p>
+              <p class="section__p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua enim
                 ad minim veniam.
               </p>
             </div>
-            <img class="visual" src="./assets/testimonials-page.svg" alt="" />
+
+            <div class="section__content">
+              <img src="./assets/testimonials-page.svg" alt="" />
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="faqs-page">
-        <div class="container section">
-          <div class="col-center section-wrapper">
-            <div class="col content-wrapper content">
-              <h2>FAQS</h2>
-              <h3>
+      <section id="faqs">
+        <div class="section container">
+          <div class="section-wrapper flex-col--center">
+            <div class="section__content flex-col">
+              <h2 class="section__title">FAQS</h2>
+              <h3 class="section__subtitle">
                 You Have <span class="content--color-purple">Questions?</span>
               </h3>
-              <p>
+              <p class="section__p">
                 And we have got answers to all of them. Lorem ipsum dolor sit
                 amet, consectetur adipiscing elit.
               </p>
             </div>
 
-            <ul class="faqs__list">
-              <li class="faqs__item">
-                <p>Are all the templates easily customizable?</p>
-              </li>
-              <li class="faqs__item">
-                <p>How long do you usually support an standalone template?</p>
-              </li>
-              <li class="faqs__item">
-                <p>What kind of payment methods do you accept?</p>
-              </li>
-              <li class="faqs__item">
-                <p>
-                  Is there a subscription service to get the latest templates?
-                </p>
-              </li>
-              <li class="faqs__item">
-                <p>Are the templates compatible with the React?</p>
-              </li>
-              <li class="faqs__item">
-                <p>Do you really support Internet Explorer 11?</p>
-              </li>
-            </ul>
+            <div class="section__content">
+              <ul class="faqs__list">
+                <li class="faqs__item">
+                  <p>Are all the templates easily customizable?</p>
+                </li>
+                <li class="faqs__item">
+                  <p>How long do you usually support an standalone template?</p>
+                </li>
+                <li class="faqs__item">
+                  <p>What kind of payment methods do you accept?</p>
+                </li>
+                <li class="faqs__item">
+                  <p>
+                    Is there a subscription service to get the latest templates?
+                  </p>
+                </li>
+                <li class="faqs__item">
+                  <p>Are the templates compatible with the React?</p>
+                </li>
+                <li class="faqs__item">
+                  <p>Do you really support Internet Explorer 11?</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

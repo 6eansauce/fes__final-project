@@ -24,6 +24,11 @@ ul {
   list-style-type: none;
 }
 
+img { 
+  display: flex;
+  width: 100%;
+}
+
 /* 
 
     MAIN STRUCTURE & STYLING
@@ -35,13 +40,6 @@ ul {
   --purple: rgb(100 21 255);
   --dark-navy: rgb(36, 62, 99);
   --light-gray: rgb(124, 139, 161);
-}
-
-.container {
-  /* Main Container: Keep everything 1280px or 90% of body */
-  width: 95%;
-  max-width: 1280px;
-  margin: 0 auto;
 }
 
 .link-unavailable {
@@ -71,28 +69,39 @@ ul {
 
 /* 
 
-    WRAPPERS
+    CONTAINERS & FLEX WRAPPERS
 
 */
 
-.row {
+.container {
+  width: min(95%, 1280px);
+  margin: 0 auto;
+}
+
+.flex-row {
+  /* Wrap children in a row, centered vertically. */
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
-.col {
+.flex-row--center {
+  /* Wrap children in a row, centered vertically & horizontally. */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-col {
+  /* Wrap children in a column, centered vertically.  */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.row-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.col-center {
+.flex-col--center {
+  /* Wrap children in a column, centered vertically & horizontally */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,16 +124,16 @@ ul {
   height: 100%;
 }
 
-.header__brand {
+.brand {
   gap: 18px;
 }
 
-.header__brand-logo {
+.brand__logo {
   width: 42px;
 }
 
-.header__brand-name {
-  font-size: 24px;
+.brand__name {
+  font-size: 1.5rem;
   font-weight: 800;
   color: var(--dark-navy);
 }
@@ -142,7 +151,7 @@ ul {
 }
 
 .nav__link {
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.5px;
   color: var(--dark-navy);
@@ -203,33 +212,29 @@ ul {
 
 */
 
-.section-wrapper {
-  height: 100%;
-  gap: 15px;
+.hero-section {
+  height: calc(100vh - var(--header-height));
 }
 
 .section {
   height: 100vh;
 }
 
-.hero {
-  height: calc(100vh - var(--header-height));
+.section-wrapper {
+  height: 100%;
+  gap: 1rem;
 }
 
-.content {
-  width: clamp(100%, 512px, 50%);
+.section__content {
+  max-width: 50%;
 }
 
-.hero-content {
-  width: clamp(100%, 512px, 40%);
+.section__content--primary {
+  max-width: 40%;
 }
 
-.visual {
-  width: clamp(400px, 100%, 50%);
-}
-
-.hero-visual {
-  width: clamp(400px, 100%, 60%);
+.section__content--secondary {
+  max-width: 60%;
 }
 
 /* 
@@ -239,26 +244,23 @@ ul {
 */
 
 .hero__title {
-  font-size: clamp(2.2rem, 6vw, 3rem);
+  max-width: 512px;
+  font-size: clamp(1.8rem, 5vw, 3rem);
   font-weight: 600;
   line-height: 1.2;
   color: rgb(26, 32, 44);
 }
 
 .hero__p {
+  max-width: 512px;
   margin: 30px 0;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   font-weight: 400;
   color: var(--dark-navy);
 }
 
-.form-wrapper {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
 .form {
+  position: relative;
   width: 100%;
   max-width: 400px;
 }
@@ -274,7 +276,7 @@ ul {
   transition: all 150ms ease;
 
   &::placeholder {
-    font-size: 16px;
+    font-size: 1rem;
     color: rgb(226, 232, 240);
   }
 
@@ -314,22 +316,29 @@ ul {
 
 */
 
-.content h2 {
-  font-size: 16px;
-  letter-spacing: 1.6px;
+.section__title {
+  font-size: 1rem;
+  letter-spacing: .2rem;
   color: var(--purple);
 }
 
-.content h3 {
-  font-size: 48px;
+.section__subtitle {
+  font-size: clamp(2.3rem, 4vw, 3rem);
   font-weight: 900;
+  line-height: 1.2;
   color: var(--dark-navy);
 }
 
-.content p {
-  font-size: 18px;
+.section__p {
+  font-size: clamp(.8rem, 2vw, 1.1rem);
   color: rgb(124, 139, 161);
 }
+
+/* 
+
+  FEATURES SECTION
+
+*/
 
 .services {
   display: grid;
@@ -349,6 +358,12 @@ ul {
   border: var(--light-gray) solid 1px;
   border-radius: 50%;
 }
+
+/* 
+
+  MEDIA RESPONSIVENESS
+
+*/
 
 @media (max-width: 500px) {
   .form-wrapper {
@@ -371,6 +386,15 @@ ul {
   .menu__links--primary {
     display: flex;
   }
+
+  .section-wrapper {
+    flex-direction: column;
+  }
+
+  .section__content {
+    max-width: 80%;
+  }
+
 }
 
 @media (max-width: 1024px) {
@@ -384,13 +408,5 @@ ul {
 
   .menu--open .menu {
     display: flex;
-  }
-
-  .section-wrapper {
-    flex-direction: column;
-  }
-
-  .content-wrapper {
-    text-align: center;
   }
 }
