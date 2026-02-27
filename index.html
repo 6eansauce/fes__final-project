@@ -11,69 +11,97 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
-    <header>
-      <div class="header container">
-        <div class="header-wrapper flex-row">
-          <div class="brand flex-row">
-            <div class="brand__logo">
-              <img src="./assets/treact-logo.svg" alt="" />
-            </div>
-            <span class="brand__name">Treact</span>
-          </div>
-
-          <nav class="nav">
-            <div class="nav-wrapper flex-row">
-              <div class="nav__links nav__links--secondary flex-row">
-                <a href="" class="nav__link link-unavailable">About</a>
-                <a href="" class="nav__link link-unavailable">Blog</a>
-                <a href="" class="nav__link link-unavailable">Pricing</a>
-                <a href="" class="nav__link link-unavailable">Contact Us</a>
+    <div class="landing">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__brand">
+              <div class="header__brand-logo">
+                <img src="./assets/logo-treact.svg" alt="" />
               </div>
-
-              <div class="nav__links nav__links--primary flex-row">
-                <a href="" class="nav__link link-unavailable">Login</a>
-                <a href="" class="nav__link nav__link--primary link-unavailable"
-                  >Sign Up</a
-                >
-              </div>
-
-              <i class="fas fa-bars" onclick="openMenu()"></i>
+              <span class="header__brand-name">Treact</span>
             </div>
-          </nav>
-        </div>
 
-        <div id="menu" class="menu">
-          <button
-            class="menu__close fas fa-times"
-            onclick="closeMenu()"
-          ></button>
-          <div class="menu__links menu__links--secondary">
-            <a href="" class="menu__link link-unavailable">About</a>
-            <a href="" class="menu__link link-unavailable">Blog</a>
-            <a href="" class="menu__link link-unavailable">Pricing</a>
-            <a href="" class="menu__link link-unavailable">Contact Us</a>
+            <nav class="header__nav">
+              <ul class="header__list header__list--primary">
+                <li class="header__item">
+                  <a href="/" class="header__link is-disabled">About</a>
+                </li>
+                <li class="header__item">
+                  <a href="/" class="header__link is-disabled">Blog</a>
+                </li>
+                <li class="header__item">
+                  <a href="/" class="header__link is-disabled">Pricing</a>
+                </li>
+                <li class="header__item">
+                  <a href="/" class="header__link is-disabled">Contact Us</a>
+                </li>
+              </ul>
+
+              <ul class="header__list">
+                <li class="header__item">
+                  <a href="" class="header__link">Login</a>
+                </li>
+                <li class="header__item">
+                  <a href="" class="header__link header__link--primary"
+                    >Sign Up</a
+                  >
+                </li>
+              </ul>
+
+              <button class="header__menu-toggle">
+                <i class="fas fa-bars"></i>
+              </button>
+            </nav>
           </div>
 
-          <div class="menu__links menu__links--primary">
-            <a href="" class="menu__link link-unavailable">Login</a>
-            <a href="" class="menu__link menu__link--primary link-unavailable"
-              >Sign Up</a
-            >
+          <div id="menu" class="menu">
+            <div class="menu__inner">
+              <button class="menu__close">
+                <i class="fas fa-times"></i>
+              </button>
+
+              <nav class="menu__nav">
+                <ul class="menu__list menu__list--secondary">
+                  <li class="menu__item">
+                    <a href="/" class="menu__link is-disabled">About</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="/" class="menu__link is-disabled">Blog</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="/" class="menu__link is-disabled">Pricing</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="/" class="menu__link is-disabled">Contact Us</a>
+                  </li>
+                </ul>
+
+                <ul class="menu__list menu__list--primary">
+                  <li class="menu__item">
+                    <a href="" class="menu__link">Login</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="menu__link menu__link--primary"
+                      >Sign Up</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <main>
-      <!-- Hero Section -->
-      <section id="hero">
-        <div class="hero-section container">
-          <div class="section-wrapper flex-row--center">
-            <div class="section__content section__content--primary flex-col">
+      <section id="hero" class="section hero">
+        <div class="container container--section">
+          <div class="section__split section__split--hero">
+            <div class="section__content section__content--primary">
               <h1 class="hero__title">
                 Beautiful React Templates
-                <span class="content--color-purple">for you. </span>
+                <span class="u-accent">for you. </span>
               </h1>
 
               <p class="hero__p">
@@ -81,41 +109,55 @@
                 modular components with a variety of pages and components.
               </p>
 
-              <form action="" class="form flex-row">
-                <input
-                  class="form__input"
-                  type="email"
-                  name="user-email"
-                  id="email"
-                  placeholder="Your E-mail Address"
-                />
-                <button class="hero-btn btn link-unavailable" type="submit">
-                  Get Started
-                </button>
+              <form action="" class="hero__form">
+                <div class="hero__field">
+                  <label for="email" class="is-visually-hidden"
+                    >Email Address</label
+                  >
+
+                  <input
+                    class="hero__input"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Your E-mail Address"
+                    autocomplete="email"
+                    required
+                  />
+
+                  <button class="hero__submit button is-disabled" type="submit">
+                    Get Started
+                  </button>
+                </div>
               </form>
 
-              <div class="trusted-customers-wrapper trusted-customers">
-                <p>OUR TRUSTED CUSTOMERS</p>
-                <img src="./assets/trusted-customers.png" alt="" />
+              <div class="hero__trusted-customers">
+                <p class="hero__trusted-customers-p">OUR TRUSTED CUSTOMERS</p>
+                <div class="hero__trusted-customers-img">
+                  <img src="./assets/trusted-customers.png" alt="" />
+                </div>
               </div>
             </div>
 
-            <div class="section__content section__content--secondary">
-              <img class="hero-visual" src="./assets/landing.svg" alt="" />
+            <div class="section__content">
+              <img src="./assets/landing.svg" alt="" />
             </div>
           </div>
         </div>
       </section>
+    </div>
 
+    <main>
       <!-- Main Sections -->
-      <section id="features">
-        <div class="section container">
-          <div class="section-wrapper flex-col--center">
-            <div class="section__content flex-col">
+
+      <section id="features" class="section features">
+        <div class="container container--section">
+          <div class="section__inner">
+            <div class="section__content">
               <h2 class="section__title">FEATURES</h2>
               <h3 class="section__subtitle">
                 We Have Amazing
-                <span class="content--color-purple">Service. </span>
+                <span class="u-accent">Service. </span>
               </h3>
               <p class="section__p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -123,129 +165,103 @@
               </p>
             </div>
 
-            <div class="section__content">
-              <ul class="services">
-                <li class="service__item">
-                  <div class="service__icon-wrapper">
-                    <img
-                      class="service__icon"
-                      src="./assets/shield-icon.svg"
-                      alt="Shield Icon"
-                    />
-                  </div>
+            <ul class="services">
+              <li class="services__item">
+                <span class="services__icon">
+                  <img src="./assets/icon-shield.svg" alt="Shield Icon" />
+                </span>
 
-                  <div class="service__description">
-                    <h4>Secure</h4>
-                    <p>
-                      We strictly only deal with vendors that provide top notch
-                      security.
-                    </p>
-                  </div>
-                </li>
+                <div class="services__header">
+                  <h4 class="services__title">Secure</h4>
+                  <p class="services__description">
+                    We strictly only deal with vendors that provide top notch
+                    security.
+                  </p>
+                </div>
+              </li>
 
-                <li class="service__item">
-                  <div class="service__icon-wrapper">
-                    <img
-                      class="service__icon"
-                      src="./assets/support-icon.svg"
-                      alt="Support Icon"
-                    />
-                  </div>
+              <li class="services__item">
+                <span class="services__icon">
+                  <img src="./assets/icon-support.svg" alt="Support Icon" />
+                </span>
 
-                  <div class="service__description">
-                    <h4>24/7 Support</h4>
-                    <p>
-                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                      quis nostrud.
-                    </p>
-                  </div>
-                </li>
+                <div class="services__header">
+                  <h4 class="services__title">24/7 Support</h4>
+                  <p class="services__description">
+                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                    quis nostrud.
+                  </p>
+                </div>
+              </li>
 
-                <li class="service__item">
-                  <div class="service__icon-wrapper">
-                    <img
-                      class="service__icon"
-                      src="./assets/customize-icon.svg"
-                      alt="Customize Icon"
-                    />
-                  </div>
+              <li class="services__item">
+                <span class="services__icon">
+                  <img src="./assets/icon-customize.svg" alt="Customize Icon" />
+                </span>
 
-                  <div class="service__description">
-                    <h4>Reliable</h4>
-                    <p>
-                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                      quis nostrud.
-                    </p>
-                  </div>
-                </li>
+                <div class="services__header">
+                  <h4 class="services__title">Customizable</h4>
+                  <p class="services__description">
+                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                    quis nostrud.
+                  </p>
+                </div>
+              </li>
 
-                <li class="service__item">
-                  <div class="service__icon-wrapper">
-                    <img
-                      class="service__icon"
-                      src="./assets/reliable-icon.svg"
-                      alt="Reliable Icon"
-                    />
-                  </div>
+              <li class="services__item">
+                <span class="services__icon">
+                  <img src="./assets/icon-reliable.svg" alt="Reliable Icon" />
+                </span>
 
-                  <div class="service__description">
-                    <h4>Reliable</h4>
-                    <p>
-                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                      quis nostrud.
-                    </p>
-                  </div>
-                </li>
+                <div class="services__header">
+                  <h4 class="services__title">Reliable</h4>
+                  <p class="services__description">
+                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                    quis nostrud.
+                  </p>
+                </div>
+              </li>
 
-                <li class="service__item">
-                  <div class="service__icon-wrapper">
-                    <img
-                      class="service__icon"
-                      src="./assets/fast-icon.svg"
-                      alt="Fast Icon"
-                    />
-                  </div>
+              <li class="services__item">
+                <span class="services__icon">
+                  <img src="./assets/icon-fast.svg" alt="Fast Icon" />
+                </span>
 
-                  <div class="service__description">
-                    <h4>Fast</h4>
-                    <p>
-                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                      quis nostrud.
-                    </p>
-                  </div>
-                </li>
+                <div class="services__header">
+                  <h4 class="services__title">Fast</h4>
+                  <p class="services__description">
+                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                    quis nostrud.
+                  </p>
+                </div>
+              </li>
 
-                <li class="service__item">
-                  <div class="service__icon-wrapper">
-                    <img
-                      class="service__icon"
-                      src="./assets/simple-icon.svg"
-                      alt="Simple Icon"
-                    />
-                  </div>
+              <li class="services__item">
+                <span class="services__icon">
+                  <img src="./assets/icon-easy.svg" alt="Easy Icon" />
+                </span>
 
-                  <div class="service__description">
-                    <h4>Easy</h4>
-                    <p>
-                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                      quis nostrud.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
+                <div class="services__header">
+                  <h4 class="services__title">Easy</h4>
+                  <p class="services__description">
+                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                    quis nostrud.
+                  </p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section id="works">
-        <div class="section container">
-          <div class="section-wrapper flex-row--center">
-            <div class="section__content flex-col">
+      <section id="works" class="section works">
+        <div class="container container--section">
+          <div class="section__split">
+            <div class="section__content">
               <h2 class="section__title">QUALITY WORK</h2>
               <h3 class="section__subtitle">
                 Designed & Developed by
-                <span class="content--color-purple">Professionals.</span>
+                <span class="u-accent">Professionals.</span>
               </h3>
               <p class="section__p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -253,41 +269,42 @@
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
               </p>
-              <button>Learn More</button>
+              <button class="button">Learn More</button>
             </div>
 
             <div class="section__content">
-              <img class="visual" src="./assets/works.png" alt="" />
+              <img src="./assets/works.png" alt="" />
             </div>
           </div>
         </div>
       </section>
 
-      <section id="steps">
-        <div class="section container">
-          <div class="section-wrapper flex-row--center">
+      <section id="steps" class="section steps">
+        <div class="container container--section">
+          <div class="section__split section__split--reverse">
+            <div class="section__content">
+              <h2 class="section__title">STEPS</h2>
+              <h3 class="section__subtitle">
+                Easy to
+                <span class="u-accent">Get Started.</span>
+              </h3>
+            </div>
+
             <div class="section__content">
               <img src="./assets/steps-page.png" alt="" />
             </div>
-
-            <div class="section__content flex-col">
-              <h2 class="section__title">STEPS</h2>
-              <h3 class="section__subtitle">
-                Easy to <span class="content--color-purple">Get Started.</span>
-              </h3>
-            </div>
           </div>
         </div>
       </section>
 
-      <section id="values">
-        <div class="section container">
-          <div class="section-wrapper flex-row--center">
-            <div class="section__content flex-col">
+      <section id="values" class="section values">
+        <div class="container container--section">
+          <div class="section__split">
+            <div class="section__content">
               <h2 class="section__title">VALUES</h2>
               <h3 class="section__subtitle">
                 We Always Abide By Our
-                <span class="content--color-purple">Principles.</span>
+                <span class="u-accent">Principles.</span>
               </h3>
               <p class="section__p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -295,23 +312,25 @@
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
               </p>
+
+              <button class="button">Learn More</button>
             </div>
 
-            <div class="section__content">
+            <div class="section__split">
               <img src="./assets/values-page.svg" alt="" />
             </div>
           </div>
         </div>
       </section>
 
-      <section id="pricing">
-        <div class="section container">
-          <div class="section-wrapper flex-col--center">
-            <div class="section__content flex-col">
+      <section id="pricing" class="section pricing">
+        <div class="container container--section">
+          <div class="section__inner">
+            <div class="section__content">
               <h2 class="section__title">PRICING</h2>
               <h3 class="section__subtitle">
                 Reasonable and Flexible
-                <span class="content--color-purple">Plans.</span>
+                <span class="u-accent">Plans.</span>
               </h3>
               <p class="section__p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -319,74 +338,73 @@
               </p>
             </div>
 
-            <div class="section__content">
-              <ul class="pricing__plans">
-                <li class="plan">
-                  <div class="plan__price">
-                    <h4>PERSONAL</h4>
-                    <p>$17.99</p>
-                    <p>MONTHLY</p>
-                  </div>
+            <ul class="pricing__plans">
+              <li class="plan">
+                <div class="plan__price">
+                  <h4>PERSONAL</h4>
+                  <p>$17.99</p>
+                  <p>MONTHLY</p>
+                </div>
 
-                  <div class="plan__features">
-                    <h5>For Individuals</h5>
-                    <p>30 Templates</p>
-                    <p>7 Landing Pages</p>
-                    <p>12 Internal Pages</p>
-                    <p>Basic Assistance</p>
-                  </div>
+                <div class="plan__features">
+                  <h5>For Individuals</h5>
+                  <p>30 Templates</p>
+                  <p>7 Landing Pages</p>
+                  <p>12 Internal Pages</p>
+                  <p>Basic Assistance</p>
+                </div>
 
-                  <button class="plan__button">BUY NOW</button>
-                </li>
+                <button class="plan__button">BUY NOW</button>
+              </li>
 
-                <li class="plan">
-                  <div class="plan__price">
-                    <h4>BUSINESS</h4>
-                    <p>$37.99</p>
-                    <p>MONTHLY</p>
-                  </div>
+              <li class="plan">
+                <div class="plan__price">
+                  <h4>BUSINESS</h4>
+                  <p>$37.99</p>
+                  <p>MONTHLY</p>
+                </div>
 
-                  <div class="plan__features">
-                    <h5>For Small Businesses</h5>
-                    <p>60 Templates</p>
-                    <p>15 Landing Pages</p>
-                    <p>22 Internal Pages</p>
-                    <p>Priority Assistance</p>
-                  </div>
+                <div class="plan__features">
+                  <h5>For Small Businesses</h5>
+                  <p>60 Templates</p>
+                  <p>15 Landing Pages</p>
+                  <p>22 Internal Pages</p>
+                  <p>Priority Assistance</p>
+                </div>
 
-                  <button class="plan__button">BUY NOW</button>
-                </li>
+                <button class="plan__button">BUY NOW</button>
+              </li>
 
-                <li class="plan">
-                  <div class="plan__price">
-                    <h4>ENTERPRISE</h4>
-                    <p>$17.99</p>
-                    <p>MONTHLY</p>
-                  </div>
+              <li class="plan">
+                <div class="plan__price">
+                  <h4>ENTERPRISE</h4>
+                  <p>$17.99</p>
+                  <p>MONTHLY</p>
+                </div>
 
-                  <div class="plan__features">
-                    <h5>For Large Companies</h5>
-                    <p>90 Templates</p>
-                    <p>27 Landing Pages</p>
-                    <p>32 Internal Pages</p>
-                    <p>Personal Assistance</p>
-                  </div>
+                <div class="plan__features">
+                  <h5>For Large Companies</h5>
+                  <p>90 Templates</p>
+                  <p>27 Landing Pages</p>
+                  <p>32 Internal Pages</p>
+                  <p>Personal Assistance</p>
+                </div>
 
-                  <button class="plan__button">BUY NOW</button>
-                </li>
-              </ul>
-            </div>
+                <button class="plan__button">BUY NOW</button>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section id="testimonials">
-        <div class="section container">
-          <div class="section-wrapper flex-row--center">
-            <div class="section__content flex-col">
+      <section id="testimonials" class="section testimonials">
+        <div class="container container--section">
+          <div class="section__split">
+            <div class="section__content">
               <h2 class="section__title">TESTIMONIALS</h2>
               <h3 class="section__subtitle">
-                Our Clients <span class="content--color-purple">Love Us.</span>
+                Our Clients
+                <span class="u-accent">Love Us.</span>
               </h3>
               <p class="section__p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -402,21 +420,21 @@
         </div>
       </section>
 
-      <section id="faqs">
-        <div class="section container">
-          <div class="section-wrapper flex-col--center">
-            <div class="section__content flex-col">
-              <h2 class="section__title">FAQS</h2>
-              <h3 class="section__subtitle">
-                You Have <span class="content--color-purple">Questions?</span>
-              </h3>
-              <p class="section__p">
-                And we have got answers to all of them. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.
-              </p>
-            </div>
+      <section id="faqs" class="section faqs">
+        <div class="section__inner">
+          <div class="container container--section">
+            <div class="section__inner">
+              <div class="section__content">
+                <h2 class="section__title">FAQS</h2>
+                <h3 class="section__subtitle">
+                  You Have <span class="u-accent">Questions?</span>
+                </h3>
+                <p class="section__p">
+                  And we have got answers to all of them. Lorem ipsum dolor sit
+                  amet, consectetur adipiscing elit.
+                </p>
+              </div>
 
-            <div class="section__content">
               <ul class="faqs__list">
                 <li class="faqs__item">
                   <p>Are all the templates easily customizable?</p>
@@ -445,8 +463,12 @@
       </section>
     </main>
 
-    <footer>
-      <div class="container"></div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="content-group"></div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
