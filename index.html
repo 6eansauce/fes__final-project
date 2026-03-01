@@ -51,7 +51,7 @@
                 </li>
               </ul>
 
-              <button class="header__menu-toggle">
+              <button class="header__menu-toggle u-fas">
                 <i class="fas fa-bars"></i>
               </button>
             </nav>
@@ -59,7 +59,7 @@
 
           <div id="menu" class="menu">
             <div class="menu__inner">
-              <button class="menu__close">
+              <button class="menu__close u-fas">
                 <i class="fas fa-times"></i>
               </button>
 
@@ -339,58 +339,70 @@
             </div>
 
             <ul class="pricing__plans">
-              <li class="plan">
-                <div class="plan__price">
-                  <h4>PERSONAL</h4>
-                  <p>$17.99</p>
-                  <p>MONTHLY</p>
+              <li class="plan plan--personal">
+                <div class="plan__content plan__content--header">
+                  <h4 class="plan__title">PERSONAL</h4>
+                  <p class="plan__price">$17.99</p>
+                  <span class="plan__term">MONTHLY</span>
                 </div>
 
-                <div class="plan__features">
-                  <h5>For Individuals</h5>
-                  <p>30 Templates</p>
-                  <p>7 Landing Pages</p>
-                  <p>12 Internal Pages</p>
-                  <p>Basic Assistance</p>
+                <div class="plan__content plan__content--body">
+                  <h5 class="plan__subtitle">For Individuals</h5>
+                  <ul class="plan__features">
+                    <li class="plan__feature">30 Templates</li>
+                    <li class="plan__feature">7 Landing Pages</li>
+                    <li class="plan__feature">12 Internal Pages</li>
+                    <li class="plan__feature">Basic Assistance</li>
+                  </ul>
                 </div>
 
-                <button class="plan__button">BUY NOW</button>
+                <div class="plan__content plan__content--footer">
+                  <button class="plan__button">BUY NOW</button>
+                </div>
+              </li>
+
+              <li class="plan plan--business">
+                <div class="plan__content plan__content--header">
+                  <h4 class="plan__title">BUSINESS</h4>
+                  <p class="plan__price">$37.99</p>
+                  <span class="plan__term">MONTHLY</span>
+                </div>
+
+                <div class="plan__content plan__content--body">
+                  <h5 class="plan__subtitle">For Small Businesses</h5>
+                  <ul class="plan__features">
+                    <li class="plan__feature">60 Templates</li>
+                    <li class="plan__feature">15 Landing Pages</li>
+                    <li class="plan__feature">22 Internal Pages</li>
+                    <li class="plan__feature">Priority Assistance</li>
+                  </ul>
+                </div>
+
+                <div class="plan__content plan__content--footer">
+                  <button class="plan__button">BUY NOW</button>
+                </div>
               </li>
 
               <li class="plan">
-                <div class="plan__price">
-                  <h4>BUSINESS</h4>
-                  <p>$37.99</p>
-                  <p>MONTHLY</p>
+                <div class="plan__content plan__content--header">
+                  <h4 class="plan__title">ENTERPRISE</h4>
+                  <p class="plan__price">$17.99</p>
+                  <span class="plan__term">MONTHLY</span>
                 </div>
 
-                <div class="plan__features">
-                  <h5>For Small Businesses</h5>
-                  <p>60 Templates</p>
-                  <p>15 Landing Pages</p>
-                  <p>22 Internal Pages</p>
-                  <p>Priority Assistance</p>
+                <div class="plan__content plan__content--body">
+                  <h5 class="plan__subtitle">For Large Companies</h5>
+                  <ul class="plan__features">
+                    <li class="plan__feature">90 Templates</li>
+                    <li class="plan__feature">27 Landing Pages</li>
+                    <li class="plan__feature">32 Internal Pages</li>
+                    <li class="plan__feature">Personal Assistance</li>
+                  </ul>
                 </div>
 
-                <button class="plan__button">BUY NOW</button>
-              </li>
-
-              <li class="plan">
-                <div class="plan__price">
-                  <h4>ENTERPRISE</h4>
-                  <p>$17.99</p>
-                  <p>MONTHLY</p>
+                <div class="plan__content plan__content--footer">
+                  <button class="plan__button">BUY NOW</button>
                 </div>
-
-                <div class="plan__features">
-                  <h5>For Large Companies</h5>
-                  <p>90 Templates</p>
-                  <p>27 Landing Pages</p>
-                  <p>32 Internal Pages</p>
-                  <p>Personal Assistance</p>
-                </div>
-
-                <button class="plan__button">BUY NOW</button>
               </li>
             </ul>
           </div>
@@ -424,7 +436,7 @@
         <div class="section__inner">
           <div class="container container--section">
             <div class="section__inner">
-              <div class="section__content">
+              <div class="section__header">
                 <h2 class="section__title">FAQS</h2>
                 <h3 class="section__subtitle">
                   You Have <span class="u-accent">Questions?</span>
@@ -437,37 +449,115 @@
 
               <ul class="faqs__list">
                 <li class="faqs__item">
-                  <p>Are all the templates easily customizable?</p>
+                  <p class="faqs__question">
+                    Are all the templates easily customizable?
+                  </p>
+                  <button class="faqs__dropdown u-fas is-disabled">
+                    <i class="fas fa-angle-down"></i>
+                  </button>
                 </li>
+
                 <li class="faqs__item">
-                  <p>How long do you usually support an standalone template?</p>
+                  <p class="faqs__question">
+                    How long do you usually support an standalone template?
+                  </p>
+                  <button class="faqs__dropdown u-fas is-disabled">
+                    <i class="fas fa-angle-down"></i>
+                  </button>
                 </li>
+
                 <li class="faqs__item">
-                  <p>What kind of payment methods do you accept?</p>
+                  <p class="faqs__question">
+                    What kind of payment methods do you accept?
+                  </p>
+                  <button class="faqs__dropdown u-fas is-disabled">
+                    <i class="fas fa-angle-down"></i>
+                  </button>
                 </li>
+
                 <li class="faqs__item">
-                  <p>
+                  <p class="faqs__question">
                     Is there a subscription service to get the latest templates?
                   </p>
+                  <button class="faqs__dropdown u-fas is-disabled">
+                    <i class="fas fa-angle-down"></i>
+                  </button>
                 </li>
+
                 <li class="faqs__item">
-                  <p>Are the templates compatible with the React?</p>
+                  <p class="faqs__question">
+                    Are the templates compatible with the React?
+                  </p>
+                  <button class="faqs__dropdown u-fas is-disabled">
+                    <i class="fas fa-angle-down"></i>
+                  </button>
                 </li>
+
                 <li class="faqs__item">
-                  <p>Do you really support Internet Explorer 11?</p>
+                  <p class="faqs__question">
+                    Do you really support Internet Explorer 11?
+                  </p>
+                  <button class="faqs__dropdown u-fas is-disabled">
+                    <i class="fas fa-angle-down"></i>
+                  </button>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
+
+      <div class="landing-card">
+        <div class="container">
+          <div class="landing-card__inner">
+            <div class="landing-card__split">
+              <div class="landing-card__content">
+                <h3 class="landing-card__title">
+                  Developers all over the world are happily using Treact.
+                </h3>
+              </div>
+              <div class="landing-card__content">
+                <button
+                  class="landing-card__button landing-card__button--primary"
+                >
+                  Get Started
+                </button>
+                <button class="landing-card__button">Contact Us</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
       <div class="container">
-        <div class="footer__inner">
-          <div class="content-group"></div>
-        </div>
+        <ul class="footer__grid">
+          <li class="footer__col">
+            <h4 class="footer__title">MAIN</h4>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="" class="footer__link">Blog</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">FAQS</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Support</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">About Us</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer__grid-item">...</li>
+          <li class="footer__grid-item">...</li>
+          <li class="footer__grid-item">...</li>
+          <li class="footer__grid-item">...</li>
+        </ul>
+
+        <div class="footer__inner"></div>
       </div>
     </footer>
   </body>
