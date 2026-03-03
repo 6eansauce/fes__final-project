@@ -99,41 +99,47 @@
         <div class="container container--section">
           <div class="section__split section__split--hero">
             <div class="section__content section__content--primary">
-              <h1 class="hero__title">
-                Beautiful React Templates
-                <span class="u-accent">for you. </span>
-              </h1>
+              <div class="section__header hero__header">
+                <h1 class="hero__title">
+                  Beautiful React Templates
+                  <span class="u-accent">for you. </span>
+                </h1>
 
-              <p class="hero__p">
-                Our templates are easy to setup, understand and customize. Fully
-                modular components with a variety of pages and components.
-              </p>
+                <p class="hero__p">
+                  Our templates are easy to setup, understand and customize.
+                  Fully modular components with a variety of pages and
+                  components.
+                </p>
 
-              <form action="" class="hero__form">
-                <div class="hero__field">
-                  <label for="email" class="is-visually-hidden"
-                    >Email Address</label
-                  >
+                <form action="" class="hero__form">
+                  <div class="hero__field">
+                    <label for="email" class="is-visually-hidden"
+                      >Email Address</label
+                    >
 
-                  <input
-                    class="hero__input"
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Your E-mail Address"
-                    autocomplete="email"
-                    required
-                  />
+                    <input
+                      class="hero__input"
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Your E-mail Address"
+                      autocomplete="email"
+                      required
+                    />
 
-                  <button class="hero__submit button is-disabled" type="submit">
-                    Get Started
-                  </button>
-                </div>
-              </form>
+                    <button
+                      class="hero__submit button is-disabled"
+                      type="submit"
+                    >
+                      Get Started
+                    </button>
+                  </div>
+                </form>
+              </div>
 
-              <div class="hero__trusted-customers">
-                <p class="hero__trusted-customers-p">OUR TRUSTED CUSTOMERS</p>
-                <div class="hero__trusted-customers-img">
+              <div class="trusted-customers">
+                <p class="trusted-customers__p">OUR TRUSTED CUSTOMERS</p>
+                <div class="trusted-customers__img">
                   <img src="./assets/trusted-customers.png" alt="" />
                 </div>
               </div>
@@ -153,7 +159,7 @@
       <section id="features" class="section features">
         <div class="container container--section">
           <div class="section__inner">
-            <div class="section__content">
+            <div class="section__header">
               <h2 class="section__title">FEATURES</h2>
               <h3 class="section__subtitle">
                 We Have Amazing
@@ -166,84 +172,99 @@
             </div>
 
             <ul class="services">
-              <li class="services__item">
-                <span class="services__icon">
-                  <img src="./assets/icon-shield.svg" alt="Shield Icon" />
-                </span>
+              <li class="service">
+                <div class="service__content">
+                  <span class="service__icon">
+                    <img src="./assets/icon-shield.svg" alt="Shield Icon" />
+                  </span>
+                </div>
 
-                <div class="services__header">
-                  <h4 class="services__title">Secure</h4>
-                  <p class="services__description">
+                <div class="service__header">
+                  <h4 class="service__title">Secure</h4>
+                  <p class="service__description">
                     We strictly only deal with vendors that provide top notch
                     security.
                   </p>
                 </div>
               </li>
 
-              <li class="services__item">
-                <span class="services__icon">
-                  <img src="./assets/icon-support.svg" alt="Support Icon" />
-                </span>
+              <li class="service">
+                <div class="service__content">
+                  <span class="service__icon">
+                    <img src="./assets/icon-support.svg" alt="Support Icon" />
+                  </span>
+                </div>
 
-                <div class="services__header">
-                  <h4 class="services__title">24/7 Support</h4>
-                  <p class="services__description">
+                <div class="service__header">
+                  <h4 class="service__title">24/7 Support</h4>
+                  <p class="service__description">
                     Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
                     quis nostrud.
                   </p>
                 </div>
               </li>
 
-              <li class="services__item">
-                <span class="services__icon">
-                  <img src="./assets/icon-customize.svg" alt="Customize Icon" />
-                </span>
+              <li class="service">
+                <div class="service__content">
+                  <span class="service__icon">
+                    <img
+                      src="./assets/icon-customize.svg"
+                      alt="Customize Icon"
+                    />
+                  </span>
+                </div>
 
-                <div class="services__header">
-                  <h4 class="services__title">Customizable</h4>
-                  <p class="services__description">
+                <div class="service__header">
+                  <h4 class="service__title">Customizable</h4>
+                  <p class="service__description">
                     Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
                     quis nostrud.
                   </p>
                 </div>
               </li>
 
-              <li class="services__item">
-                <span class="services__icon">
-                  <img src="./assets/icon-reliable.svg" alt="Reliable Icon" />
-                </span>
+              <li class="service">
+                <div class="service__content">
+                  <span class="service__icon">
+                    <img src="./assets/icon-reliable.svg" alt="Reliable Icon" />
+                  </span>
+                </div>
 
-                <div class="services__header">
-                  <h4 class="services__title">Reliable</h4>
-                  <p class="services__description">
+                <div class="service__header">
+                  <h4 class="service__title">Reliable</h4>
+                  <p class="service__description">
                     Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
                     quis nostrud.
                   </p>
                 </div>
               </li>
 
-              <li class="services__item">
-                <span class="services__icon">
-                  <img src="./assets/icon-fast.svg" alt="Fast Icon" />
-                </span>
+              <li class="service">
+                <div class="service__content">
+                  <span class="service__icon">
+                    <img src="./assets/icon-fast.svg" alt="Fast Icon" />
+                  </span>
+                </div>
 
-                <div class="services__header">
-                  <h4 class="services__title">Fast</h4>
-                  <p class="services__description">
+                <div class="service__header">
+                  <h4 class="service__title">Fast</h4>
+                  <p class="service__description">
                     Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
                     quis nostrud.
                   </p>
                 </div>
               </li>
 
-              <li class="services__item">
-                <span class="services__icon">
-                  <img src="./assets/icon-easy.svg" alt="Easy Icon" />
-                </span>
+              <li class="service">
+                <div class="service__content">
+                  <span class="service__icon">
+                    <img src="./assets/icon-easy.svg" alt="Easy Icon" />
+                  </span>
+                </div>
 
-                <div class="services__header">
-                  <h4 class="services__title">Easy</h4>
-                  <p class="services__description">
+                <div class="service__header">
+                  <h4 class="service__title">Easy</h4>
+                  <p class="service__description">
                     Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
                     quis nostrud.
                   </p>
@@ -254,21 +275,24 @@
         </div>
       </section>
 
-      <section id="works" class="section works">
+      <section id="work" class="section work">
         <div class="container container--section">
           <div class="section__split">
             <div class="section__content">
-              <h2 class="section__title">QUALITY WORK</h2>
-              <h3 class="section__subtitle">
-                Designed & Developed by
-                <span class="u-accent">Professionals.</span>
-              </h3>
-              <p class="section__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
+              <div class="section__header">
+                <h2 class="section__title">QUALITY WORK</h2>
+                <h3 class="section__subtitle">
+                  Designed & Developed by
+                  <span class="u-accent">Professionals.</span>
+                </h3>
+                <p class="section__p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+
               <button class="button">Learn More</button>
             </div>
 
@@ -282,12 +306,45 @@
       <section id="steps" class="section steps">
         <div class="container container--section">
           <div class="section__split section__split--reverse">
-            <div class="section__content">
-              <h2 class="section__title">STEPS</h2>
-              <h3 class="section__subtitle">
-                Easy to
-                <span class="u-accent">Get Started.</span>
-              </h3>
+            <div class="section__content steps__content">
+              <div class="section__header">
+                <h2 class="section__title">STEPS</h2>
+                <h3 class="section__subtitle">
+                  Easy to
+                  <span class="u-accent">Get Started.</span>
+                </h3>
+              </div>
+
+              <ol class="steps__list">
+                <li class="step">
+                  <div class="step__content">
+                    <h4 class="step__title">Register</h4>
+                    <p class="step__description">
+                      Create an account with us using Google or Facebook.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="step">
+                  <div class="step__content">
+                    <h4 class="step__title">Download</h4>
+                    <p class="step__description">
+                      Browse and Download the template that you like from the
+                      marketplace.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="step">
+                  <div class="step__content">
+                    <h4 class="step__title">Run</h4>
+                    <p class="step__description">
+                      Follow the instructions to setup and customize the
+                      template to your needs.
+                    </p>
+                  </div>
+                </li>
+              </ol>
             </div>
 
             <div class="section__content">
@@ -301,22 +358,24 @@
         <div class="container container--section">
           <div class="section__split">
             <div class="section__content">
-              <h2 class="section__title">VALUES</h2>
-              <h3 class="section__subtitle">
-                We Always Abide By Our
-                <span class="u-accent">Principles.</span>
-              </h3>
-              <p class="section__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
+              <div class="section__header">
+                <h2 class="section__title">VALUES</h2>
+                <h3 class="section__subtitle">
+                  We Always Abide By Our
+                  <span class="u-accent">Principles.</span>
+                </h3>
+                <p class="section__p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
 
               <button class="button">Learn More</button>
             </div>
 
-            <div class="section__split">
+            <div class="section__content">
               <img src="./assets/values-page.svg" alt="" />
             </div>
           </div>
@@ -326,7 +385,7 @@
       <section id="pricing" class="section pricing">
         <div class="container container--section">
           <div class="section__inner">
-            <div class="section__content">
+            <div class="section__header">
               <h2 class="section__title">PRICING</h2>
               <h3 class="section__subtitle">
                 Reasonable and Flexible
@@ -411,18 +470,136 @@
 
       <section id="testimonials" class="section testimonials">
         <div class="container container--section">
-          <div class="section__split">
+          <div class="section__split section__split--reverse">
             <div class="section__content">
-              <h2 class="section__title">TESTIMONIALS</h2>
-              <h3 class="section__subtitle">
-                Our Clients
-                <span class="u-accent">Love Us.</span>
-              </h3>
-              <p class="section__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua enim
-                ad minim veniam.
-              </p>
+              <div class="section__header">
+                <h2 class="section__title">TESTIMONIALS</h2>
+                <h3 class="section__subtitle">
+                  Our Clients
+                  <span class="u-accent">Love Us.</span>
+                </h3>
+                <p class="section__p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  enim ad minim veniam.
+                </p>
+              </div>
+
+              <div class="testimonials__slides">
+                <ul id="testimonialsCarousel" class="testimonials__list">
+                  <li class="testimonial">
+                    <div class="testimonial__body">
+                      <div class="testimonial__rating">
+                        <span class="testimonial__star">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="testimonial__star">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="testimonial__star">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="testimonial__star">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="testimonial__star">
+                          <i class="fas fa-star"></i>
+                        </span>
+                      </div>
+
+                      <h4 class="testimonial__title">
+                        Amazing User Experience
+                      </h4>
+
+                      <blockquote class="testimonial__review">
+                        <p class="testimonial__comment">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Obcaecati iste voluptatibus hic laudantium magni
+                          officiis est fuga quis, porro, vel nemo aut quisquam
+                          ullam dolore odio error soluta repellendus assumenda
+                          architecto ad voluptate non aspernatur ex! Earum
+                          perspiciatis dicta tempora!
+                        </p>
+                      </blockquote>
+                    </div>
+
+                    <div class="testimonial__footer">
+                      <span class="testimonial__pfp">
+                        <img src="./assets/CharlotteHale.avif" alt="" />
+                      </span>
+
+                      <cite class="testimonial__reviewer">
+                        <h4 class="testimonial__name">Charlotte Hale</h4>
+                        <h5 class="testimonial__credentials">
+                          Director, Delos Inc.
+                        </h5>
+                      </cite>
+                    </div>
+                  </li>
+
+                  <li class="testimonial">
+                    <div class="testimonial__body">
+                      <div class="testimonial__rating">
+                        <span class="testimonial__star">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="testimonial__star">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="testimonial__star">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="testimonial__star">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="testimonial__star">
+                          <i class="fas fa-star"></i>
+                        </span>
+                      </div>
+
+                      <h4 class="testimonial__title">
+                        Amazing User Experience
+                      </h4>
+
+                      <blockquote class="testimonial__review">
+                        <p class="testimonial__comment">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Ad cum natus consequuntur adipisci vero
+                          cupiditate, error totam veritatis ducimus veniam
+                          voluptatem iure assumenda? Molestiae sequi at
+                          consequatur voluptates laudantium mollitia.
+                        </p>
+                      </blockquote>
+                    </div>
+
+                    <div class="testimonial__footer">
+                      <span class="testimonial__pfp">
+                        <img src="./assets/AdamCuppy.avif" alt="" />
+                      </span>
+
+                      <cite class="testimonial__reviewer">
+                        <h4 class="testimonial__name">Adam Cuppy</h4>
+                        <h5 class="testimonial__credentials">
+                          Founder, EventsNYC
+                        </h5>
+                      </cite>
+                    </div>
+                  </li>
+
+                  <li>...</li>
+                  <li>...</li>
+                </ul>
+
+                <div class="testimonials__action">
+                  <button class="testimonials__scroll-button testimonialsPrev">
+                    <i class="fas fa-arrow-left"></i>
+                  </button>
+
+                  <button class="testimonials__scroll-button testimonialsNext">
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
             </div>
 
             <div class="section__content">
