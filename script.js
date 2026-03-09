@@ -12,8 +12,8 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   const testimonialsCarousel = document.getElementById("testimonialsCarousel");
-  const testimonialsPrev = document.querySelector(".testimonialsPrev");
-  const testimonialsNext = document.querySelector(".testimonialsNext");
+  const testimonialsPrev = document.getElementById("testimonialsPrev");
+  const testimonialsNext = document.getElementById("testimonialsNext");
 
   testimonialsPrev.addEventListener("click", () => {
     testimonialsCarousel.scrollBy({

@@ -49,7 +49,7 @@
                 </li>
               </ul>
 
-              <button class="header__menu-toggle u-fas">
+              <button class="header__menu-toggle action">
                 <i class="fas fa-bars"></i>
               </button>
             </nav>
@@ -57,7 +57,7 @@
 
           <div id="menu" class="menu">
             <div class="menu__inner">
-              <button class="menu__close u-fas">
+              <button class="menu__close action">
                 <i class="fas fa-times"></i>
               </button>
 
@@ -432,8 +432,8 @@
                 </div>
 
                 <div class="plan__content plan__content--body">
-                  <h5 class="plan__subtitle">For Individuals</h5>
                   <ul class="plan__features">
+                    <h5 class="plan__subtitle">For Individuals</h5>
                     <li class="plan__feature">30 Templates</li>
                     <li class="plan__feature">7 Landing Pages</li>
                     <li class="plan__feature">12 Internal Pages</li>
@@ -442,7 +442,7 @@
                 </div>
 
                 <div class="plan__content plan__content--footer">
-                  <button class="plan__button">BUY NOW</button>
+                  <button class="plan__button button">BUY NOW</button>
                 </div>
               </li>
 
@@ -454,8 +454,8 @@
                 </div>
 
                 <div class="plan__content plan__content--body">
-                  <h5 class="plan__subtitle">For Small Businesses</h5>
                   <ul class="plan__features">
+                    <h5 class="plan__subtitle">For Small Businesses</h5>
                     <li class="plan__feature">60 Templates</li>
                     <li class="plan__feature">15 Landing Pages</li>
                     <li class="plan__feature">22 Internal Pages</li>
@@ -464,11 +464,11 @@
                 </div>
 
                 <div class="plan__content plan__content--footer">
-                  <button class="plan__button">BUY NOW</button>
+                  <button class="plan__button button">BUY NOW</button>
                 </div>
               </li>
 
-              <li class="plan">
+              <li class="plan plan--enterprise">
                 <div class="plan__content plan__content--header">
                   <h4 class="plan__title">ENTERPRISE</h4>
                   <p class="plan__price">$17.99</p>
@@ -476,8 +476,8 @@
                 </div>
 
                 <div class="plan__content plan__content--body">
-                  <h5 class="plan__subtitle">For Large Companies</h5>
                   <ul class="plan__features">
+                    <h5 class="plan__subtitle">For Large Companies</h5>
                     <li class="plan__feature">90 Templates</li>
                     <li class="plan__feature">27 Landing Pages</li>
                     <li class="plan__feature">32 Internal Pages</li>
@@ -486,7 +486,7 @@
                 </div>
 
                 <div class="plan__content plan__content--footer">
-                  <button class="plan__button">BUY NOW</button>
+                  <button class="plan__button button">BUY NOW</button>
                 </div>
               </li>
             </ul>
@@ -511,8 +511,8 @@
                 </p>
               </div>
 
-              <div class="testimonials__slides">
-                <ul id="testimonialsCarousel" class="testimonials__list">
+              <div class="carousel">
+                <ul id="testimonialsCarousel" class="carousel__items">
                   <li class="testimonial">
                     <div class="testimonial__body">
                       <div class="testimonial__rating">
@@ -660,12 +660,12 @@
                   </li>
                 </ul>
 
-                <div class="testimonials__action">
-                  <button class="testimonials__scroll-button testimonialsPrev">
+                <div class="carousel__functions">
+                  <button id="testimonialsPrev" class="carousel__action">
                     <i class="fas fa-arrow-left"></i>
                   </button>
 
-                  <button class="testimonials__scroll-button testimonialsNext">
+                  <button id="testimonialsNext" class="carousel__action">
                     <i class="fas fa-arrow-right"></i>
                   </button>
                 </div>
@@ -699,7 +699,7 @@
                   <p class="faqs__question">
                     Are all the templates easily customizable?
                   </p>
-                  <button class="faqs__dropdown u-fas is-disabled">
+                  <button class="faqs__dropdown action is-disabled">
                     <i class="fas fa-angle-down"></i>
                   </button>
                 </li>
@@ -708,7 +708,7 @@
                   <p class="faqs__question">
                     How long do you usually support an standalone template?
                   </p>
-                  <button class="faqs__dropdown u-fas is-disabled">
+                  <button class="faqs__dropdown action is-disabled">
                     <i class="fas fa-angle-down"></i>
                   </button>
                 </li>
@@ -717,7 +717,7 @@
                   <p class="faqs__question">
                     What kind of payment methods do you accept?
                   </p>
-                  <button class="faqs__dropdown u-fas is-disabled">
+                  <button class="faqs__dropdown action is-disabled">
                     <i class="fas fa-angle-down"></i>
                   </button>
                 </li>
@@ -726,7 +726,7 @@
                   <p class="faqs__question">
                     Is there a subscription service to get the latest templates?
                   </p>
-                  <button class="faqs__dropdown u-fas is-disabled">
+                  <button class="faqs__dropdown action is-disabled">
                     <i class="fas fa-angle-down"></i>
                   </button>
                 </li>
@@ -735,7 +735,7 @@
                   <p class="faqs__question">
                     Are the templates compatible with the React?
                   </p>
-                  <button class="faqs__dropdown u-fas is-disabled">
+                  <button class="faqs__dropdown action is-disabled">
                     <i class="fas fa-angle-down"></i>
                   </button>
                 </li>
@@ -744,7 +744,7 @@
                   <p class="faqs__question">
                     Do you really support Internet Explorer 11?
                   </p>
-                  <button class="faqs__dropdown u-fas is-disabled">
+                  <button class="faqs__dropdown action is-disabled">
                     <i class="fas fa-angle-down"></i>
                   </button>
                 </li>
@@ -765,7 +765,7 @@
               </div>
               <div class="landing-card__content">
                 <button class="button button--orange">Get Started</button>
-                <button class="landing-card__button">Contact Us</button>
+                <button class="button button--outlined">Contact Us</button>
               </div>
             </div>
           </div>
